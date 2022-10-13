@@ -2,6 +2,8 @@
 
 package com.acmerobotics.roadrunner
 
+import com.acmerobotics.roadrunner.Pose2d.Companion.exp
+import com.acmerobotics.roadrunner.Rotation2d.Companion.exp
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
@@ -164,7 +166,7 @@ data class Pose2d(
     val trans: Vector2d,
     @JvmField
     val rot: Rotation2d,
-) {
+    )  {
     constructor(trans: Vector2d, rot: Double) : this(trans, Rotation2d.exp(rot))
     constructor(transX: Double, transY: Double, rot: Double) : this(Vector2d(transX, transY), rot)
 

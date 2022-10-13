@@ -1,5 +1,7 @@
 package com.acmerobotics.roadrunner
 
+import com.acmerobotics.roadrunner.PosePathBuilder.RotationContinuityException
+import com.acmerobotics.roadrunner.TrajectoryBuilder.PoseMap
 import kotlin.math.abs
 
 /**
